@@ -1,4 +1,4 @@
-from procs.proc_log import ProcLog
+from .procs.proc_log import ProcLog
 
 class SQLItemFatura(ProcLog):
     

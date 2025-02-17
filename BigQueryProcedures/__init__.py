@@ -1,7 +1,6 @@
 import BigQuery
 
-# from sql_item_fatura import SQLItemFatura
-import SQLItemFatura
+from sql_item_fatura import SQLItemFatura
 from sql_item_fatura_trafego_detalhado import SQLItemFaturaTrafegoDetalhado
 from sql_recarga_ocs import SQLRecargaOCS
 from sql_crc_recuperacao_vas import SQLCRCRecuperacaoVAS

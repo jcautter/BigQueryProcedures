@@ -1,5 +1,4 @@
-
-from proc_log import ProcLog
+from .proc_log import ProcLog
 
 class SQLItemFaturaTrafegoDetalhado:
 

@@ -1,9 +1,9 @@
 import BigQuery
 
-from procs.sql_item_fatura import SQLItemFatura
-from procs.sql_item_fatura_trafego_detalhado import SQLItemFaturaTrafegoDetalhado
-from procs.sql_recarga_ocs import SQLRecargaOCS
-from procs.sql_crc_recuperacao_vas import SQLCRCRecuperacaoVAS
+from sql_item_fatura import SQLItemFatura
+from sql_item_fatura_trafego_detalhado import SQLItemFaturaTrafegoDetalhado
+from sql_recarga_ocs import SQLRecargaOCS
+from sql_crc_recuperacao_vas import SQLCRCRecuperacaoVAS
 
 class BigQueryProcedures(
     SQLItemFatura

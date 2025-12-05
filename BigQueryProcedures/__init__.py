@@ -5,6 +5,7 @@ from .sql_item_fatura_trafego_detalhado import SQLItemFaturaTrafegoDetalhado
 from .sql_recarga_ocs import SQLRecargaOCS
 from .sql_crc_recuperacao_vas import SQLCRCRecuperacaoVAS
 from .sql_full_base import SQLFullBaseFatura
+from .sql_prebilling_avulso import SQLPrebillingAvulso
 
 class BigQueryProcedures(
     SQLItemFatura
@@ -12,6 +13,7 @@ class BigQueryProcedures(
     , SQLRecargaOCS
     , SQLCRCRecuperacaoVAS
     , SQLFullBaseFatura
+    , SQLPrebillingAvulso
 ):
     
     def __init__(self, *, bq:BigQuery=None, project:str=None, token:str=None):
@@ -21,3 +23,4 @@ class BigQueryProcedures(
             self.bq = BigQuery(project, token)
         else:
             raise Exception("Sorry, conection or project and token are needed!")
+
